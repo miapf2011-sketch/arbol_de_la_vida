@@ -1,3 +1,5 @@
+
+
 from raiz import SerVivo
 
 class Animal(SerVivo):
@@ -7,15 +9,15 @@ class Animal(SerVivo):
         self.habitat = habitat
 
     def desplazarse(self):
-        self.energia = -5
+        self.energia -= 5
         print("el animal se mueve -5 de energia")
 
     def alimentarse(self):
         if self.tipo_dieta == "carnivoro":
-            self.energia = +20
+            self.energia += 20
             print("cazando presa")
         else:
-            self.energia = +20
+            self.energia += 20
             print("comiendo plantas")
 
 

@@ -11,7 +11,7 @@ class Mamifero(Vertebrado):
 
     def desplazarse(self):
         print("corriendo en cuatro patas")
-        self.energia = -10
+        self.energia -= 10
 
 
 

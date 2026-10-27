@@ -6,7 +6,7 @@ class Planta(SerVivo):
         self.tipo_hoja = tipo_hoja
         self.necesita_sombra = necesita_sombra
     def alimentarse(self):
-        self.energia = +10
+        self._energia += 10
         print ("esta haciendo fotosintesis")
 
 
