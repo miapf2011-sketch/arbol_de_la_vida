@@ -1,0 +1,15 @@
+from vertebrado import Vertebrado
+
+class Anfibio(Vertebrado):
+    def __init__(self, nombre_cientifico, edad, energia, adn, tipo_dieta, habitat, tiene_columna, tipo_esqueleto, fase_vida):
+        super().__init__(nombre_cientifico, edad, energia, adn, tipo_dieta, habitat, tiene_columna, tipo_esqueleto)
+        self.fase_vida = fase_vida
+
+    def respirar (self):
+        if self.fase_vida == "renacuajo":
+            print ("respira por las branqueas")
+        else:
+            print ("respira por los pulmones")
+
+
+
